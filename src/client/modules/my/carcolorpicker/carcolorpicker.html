@@ -1,0 +1,20 @@
+<template>
+   <!-- <lightning-card title="CAR COLOR PICKER" icon-name="standard:account">-->
+
+    <div class="divClass">
+        <img src={selectedImage} alt="Car Colour" width="500px">
+        <p slot="footer">
+            <template for:each={colours} for:item="color">
+                <span key={color} 
+                      data-color={color} 
+                      onclick={selectedColourHandler}
+                      class={color}>
+                </span>
+            </template>
+        </p>
+    </div>
+
+   <!--- </lightning-card>-->
+</template>
+
+
